@@ -1,0 +1,5 @@
+
+�
+java:S3577"�Rename class "MockCaptor" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(ƛūJ$cbe15ace-fcc8-44d9-ab3c-08c93ff4c9ee
+Z
+java:S5786"Remove this 'public' modifier.(ƛūJ$05e626f0-ea3e-477b-846a-12645866456d
