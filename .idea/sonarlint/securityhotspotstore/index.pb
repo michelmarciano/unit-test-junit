@@ -240,3 +240,7 @@ Q.idea/sonarlint/securityhotspotstore/c/3/c3a02c1b97b8dffc7ce9f7043465bcfb9736d7
 Q.idea/sonarlint/securityhotspotstore/e/4/e4875db54ef218babee37bf834a415cdb19b3db2,1/a/1ac3eb133a0ac8cfc7c1d5357ce7f2054125e97e
 Å
 Q.idea/sonarlint/securityhotspotstore/9/a/9a51f4c979258f16db66d5c1569cdadc32e2c1a7,a/5/a512dd03197b8d71c91b163a907233310411a119
+]
+-src/test/java/algaworks/AssertEqualsTest.java,6/8/68c7709950b5ccf55517ec1f074845a3da742f39
+[
++src/test/java/algaworks/AssertTrueTest.java,8/e/8e3a724c0052dd290bda9664429b88e55eeec36a
