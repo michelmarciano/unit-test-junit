@@ -12,6 +12,7 @@ public class AssertAllTest {
     public void deveRealizarAssercaoAgrupada(){
         String nameExpected = "mike";
         int idadeExpected = 39;
+
         Pessoa pessoa = new Pessoa("mike", 39);
 
         assertAll(

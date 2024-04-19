@@ -1,7 +1,0 @@
-
-“
-java:S3577"ïRename class "AssertDoesNotException" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(øﬂ⁄ëJ$ec979f9b-c6fb-44a7-84d6-3becc4face63
-Y
-java:S5786"Remove this 'public' modifier.(›ëêlJ$bfdc0e10-cde1-4fcc-8003-fafff7134059
-Z
-java:S5786"Remove this 'public' modifier.(øﬂ⁄ëJ$8f37f6f4-5b66-41b5-93f5-c94a7dd4c432
