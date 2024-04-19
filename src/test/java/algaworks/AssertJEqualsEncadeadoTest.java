@@ -5,7 +5,7 @@ import org.example.algaworks.Saudar;
 import org.junit.jupiter.api.*;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-public class AssertJEqualsTest {
+public class AssertJEqualsEncadeadoTest {
 
     @Nested
     @DisplayName("Teste Saudacao com Sucesso")
@@ -19,6 +19,8 @@ public class AssertJEqualsTest {
             String saudacao = Saudar.saudar(9);
             //Assert AssertJ
             Assertions.assertThat(saudacao)
+                    .isNotBlank()
+                    .isNotEmpty()
                     .isEqualTo(expected);
         }
     }

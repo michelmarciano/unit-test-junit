@@ -21,8 +21,11 @@ public class AssertJMensagensDescritivasTest {
 
             //Assert AssertJ
             Assertions.assertThat(saudacao)
+                    //O as é uma descrição
                     .as("Validando se a saudacao é %s", saudacao)
+                    //O withFailMessage é uma mensagem descritiva
                     .withFailMessage("Erro: Saudacao incorreta! Resultado %s", saudacao)
+                    //O isEqualTo é a compracao que faremos
                     .isEqualTo(expected);
 
         }
