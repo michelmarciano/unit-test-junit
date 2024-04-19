@@ -10,7 +10,7 @@ import udemy.negocio.LocacaoService;
 import udemy.negocio.Usuario;
 
 @DisplayName("Dado um filme")
-public class AssertNotEqualsTest {
+public class AssertSameTest {
 
     @Nested
     @DisplayName("Quando Alugar")
@@ -37,9 +37,10 @@ public class AssertNotEqualsTest {
             //Act
             LocacaoService locacaoFilme = new LocacaoService();
             Locacao primeiraLocacao = locacaoFilme.alugarFilme(usuario, filme);
+            Locacao segundaLocacao = locacaoFilme.alugarFilme(usuario, filme);
 
             //Assert
-            Assertions.assertNotEquals(locacaoFilme, primeiraLocacao);
+            Assertions.assertSame(segundaLocacao.getFilme().getNome(), primeiraLocacao.getFilme().getNome());
 
 
         }

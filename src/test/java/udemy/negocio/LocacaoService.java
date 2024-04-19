@@ -6,7 +6,10 @@ import static udemy.negocio.DataUtils.adicionarDias;
 
 public class LocacaoService {
 
-    public Locacao alugarFilme(Usuario usuario, Filme filme){
+    public Locacao alugarFilme(Usuario usuario, Filme filme) throws Exception {
+        if(filme.getEstoque() == 0){
+            throw new Exception("Sem estoque");
+        }
         Date dataAtual = new Date();
 
         Locacao locacao = new Locacao();

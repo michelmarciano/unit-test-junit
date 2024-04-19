@@ -19,7 +19,7 @@ public class AssertEqualsTest {
 
         @DisplayName("Entao deve alugar com sucesso")
         @Test
-        void deveRetornarComSucesso() {
+        void deveRetornarComSucesso() throws Exception {
             //Arange(cenario)
 
             Usuario usuario = new Usuario();

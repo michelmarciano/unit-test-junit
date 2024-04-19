@@ -4,41 +4,27 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import udemy.negocio.Filme;
-import udemy.negocio.Locacao;
-import udemy.negocio.LocacaoService;
-import udemy.negocio.Usuario;
+import udemy.negocio.*;
 
-@DisplayName("Dado um filme")
+@DisplayName("Dado dois numeros inteiros")
 public class AssertTrueTest {
 
-    @DisplayName("Quando realizar um aluguel")
+    @DisplayName("Quando somar")
     @Nested
-    class QuandoRealizarUmAluguel {
+    class QuandoSomar {
 
-        @DisplayName("Entao deve retornar o valor com sucesso")
+        @DisplayName("Entao deve retornar a soma ")
         @Test
         void entaoDeveAlugarcomSucesso() {
 
             //Arange(cenario)
-            Usuario usuario = new Usuario();
-            usuario.setNome("Mike");
-
-            Filme filme = new Filme();
-            filme.setNome("velozes e furiosos");
-            filme.setPreLocacao(10.0);
-            filme.setEstoque(1);
-
-            Locacao locacao = new Locacao();
-            locacao.setFilme(filme);
-            locacao.setUsuario(usuario);
+            Soma soma = new Soma();
 
             //Act
-            LocacaoService locacaoFilme = new LocacaoService();
-            Locacao primeiraLocacao = locacaoFilme.alugarFilme(usuario, filme);
+            int calc = soma.calc(2, 4);
 
             //Assert
-            Assertions.assertTrue(primeiraLocacao.getFilme().getPreLocacao().equals(10.0));
+            Assertions.assertEquals(6, calc);
 
         }
 
